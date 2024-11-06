@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Shlop'; 
+    src: url('imgs/shlop\ rg.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Shlop' ; 
+    background-color: black;
+    color: white;
+  margin-bottom: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header .dates {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 40%; 
+}
+
+.text h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+.image {
+    width: 60%; 
+    max-width: 1000px; 
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative; 
+    overflow: auto; 
+}
+
+body::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/ariesscarybg.gif); 
+    background-size: cover; 
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+.container {
+    position: relative; 
+    width: 80%;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+@font-face {
+    font-family: 'Shlop'; 
+    src: url('imgs/shlop.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* NAV BAR IN FOOTER*/
+
+.snake-footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px; 
+    height: 60px;
+}
+
+.footer-link {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Didot', serif; 
+    font-size: 18px; 
+}
+
+.footer-link img {
+    width: 250px; 
+    height: auto; 
+    object-fit: contain; 
+    margin: 0 185px;
+}
+
+.footer-link:hover span {
+    color: #8a0000; 
+}

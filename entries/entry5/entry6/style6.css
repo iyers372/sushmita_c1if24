@@ -1,0 +1,50 @@
+/* Universal styling for both versions */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lamoric Rowen', sans-serif; /* Placeholder for your custom font */
+    color: white;
+}
+
+h1, p {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Strong drop shadow */
+}
+
+/* Styling for the Nice Version */
+.nice-version {
+    background: url('path-to-nice-gif.gif') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nice-version .content {
+    text-align: center;
+}
+
+/* Styling for the Evil Version */
+.evil-version {
+    background: url('path-to-evil-gif.gif') no-repeat center center/cover;
+    height: 100%;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+}
+
+.evil-version .content {
+    text-align: center;
+}
+
+/* Media Query to show Evil Version on smaller screens */
+@media screen and (max-width: 768px) {
+    .nice-version {
+        display: none; /* Hide Nice version on smaller screens */
+    }
+
+    .evil-version {
+        display: flex; /* Show Evil version on smaller screens */
+    }
+}

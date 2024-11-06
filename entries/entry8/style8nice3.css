@@ -1,0 +1,58 @@
+ody, html {
+    height: 100%;
+    margin: 10px;
+    padding: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    background: url('imgs/E8N3.jpg') ;
+    background-size: contain;
+    background-repeat: repeat;
+    color: rgb(255, 255, 255); 
+    font-size: 1rem;
+}
+.overlay{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 5px 8px; 
+    border-radius: 2px; 
+    stroke: white;
+    stroke-width: 5px;
+}
+
+a{
+    color: inherit;
+}
+
+/* NAV BAR IN FOOTER*/
+
+.snake-footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px; 
+    height: 60px;
+}
+
+.footer-link {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Didot', serif; 
+    font-size: 18px; 
+}
+
+.footer-link img {
+    width: 250px; 
+    height: auto; 
+    object-fit: contain; 
+    margin: 0 185px;
+}
+
+.footer-link:hover span {
+    color: #8a0000; 
+}

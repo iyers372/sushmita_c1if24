@@ -1,0 +1,63 @@
+
+
+@font-face {
+    font-family: 'Lamoric Rowen';  
+    src: url('font/LamoricRowen.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    color: inherit;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lamoric Rowen', sans-serif; 
+    color: white;
+    font-size: 1.7rem;
+    line-height: 0.5rem;
+}
+
+h1, p {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+}
+
+
+.nice-version {
+    background: url('imgs/E6P1N.gif')  center ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nice-version .content {
+    text-align: center;
+}
+
+
+.evil-version {
+    background: url('imgs/E6P1E.gif')  center ;
+    height: 100%;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+}
+
+.evil-version .content {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nice-version {
+        display: none; 
+    }
+
+    .evil-version {
+        display: flex; 
+    }
+}

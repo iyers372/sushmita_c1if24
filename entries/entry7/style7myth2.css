@@ -1,0 +1,158 @@
+/* Basic styling for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Athelas', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+/* Container to hold the background and text overlay */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url(imgs/E7M2.gif) center; 
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+
+/* Text overlay with transparent background */
+.overlay-text {
+    position: absolute;
+    top: 20px; /* Adjusts position near the top */
+    width: 40%; /* Adjust width as needed */
+    padding: 10px 8px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    z-index: 1;
+    border-radius: 2px; /* Optional: adds rounded corners */
+    stroke: white;
+    stroke-width: 3px;
+}
+
+.bottom-heading {
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Athelas', serif;
+    text-align: center;
+    margin-bottom: 80px; /* Space above the footer */
+    bottom: 60px;
+    z-index: 2;
+    position: absolute;
+}
+
+.bottom-heading:hover{
+    color: #8a0000;
+}
+
+/* NAV BAR STYLING*/
+
+.snake-footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px; 
+    height: 60px;
+}
+
+/* Footer link styling */
+.footer-link {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Didot', serif; 
+    font-size: 18px; 
+    margin: 0 150px; /* Adjust margin for even spacing */
+}
+
+.footer-link img {
+    width: 250px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+/* Hover effect for text */
+.footer-link:hover span {
+    color: #8a0000; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+        width: 90%;
+    }
+
+    .container {
+        background-size: auto;
+    }
+
+    .bottom-heading {
+        font-size: 1.5rem;
+        margin-bottom: 70px;
+    }
+
+    /* Footer adjustments */
+    .snake-footer {
+        padding: 4px 8px;
+        height: 50px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+        margin: 0 100px;
+    }
+
+    .footer-link img {
+        width: 200px;
+    }
+}
+
+/* Media query for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+    .overlay-text {
+        font-size: 1rem;
+        padding: 6px 10px;
+        width: 95%;
+    }
+    .bottom-heading {
+        font-size: 1.2rem;
+        margin-bottom: 60px;
+    }
+
+    /* Footer adjustments */
+    .snake-footer {
+        padding: 3px 6px;
+        height: 40px;
+        flex-direction: column;
+    }
+
+    .footer-link {
+        font-size: 14px;
+        margin: 5px 0; /* Adjust margin to avoid overcrowding */
+    }
+
+    .footer-link img {
+        width: 150px;
+    }
+}

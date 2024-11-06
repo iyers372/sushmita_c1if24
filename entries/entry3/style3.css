@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: 'Lamoric Rowen';
+    src: url('fonts/LamoricRowen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background: url('imgs/geminibg.gif') no-repeat center center fixed;
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+}
+
+a{
+    color: inherit;
+}
+.container {
+    width: 100%;
+    max-width: 3200px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.title {
+    font-family: 'Lamoric Rowen', serif; 
+    font-size: 4rem;
+    margin: 5px;
+}
+
+
+.dates {
+    font-family: 'Lamoric Rowen', serif; 
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+
+.twins-image {
+    margin: 10px 0;
+}
+
+.twins {
+    max-width: 60%; 
+    height: auto;
+}
+
+
+.story {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+.what-if {
+    font-family: Impact, sans-serif;
+    font-size: 2rem;
+    color: red;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+body {
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    font-family: Georgia, serif;
+    position: relative; 
+}
+
+
+

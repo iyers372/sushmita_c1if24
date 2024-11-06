@@ -1,0 +1,128 @@
+
+* {
+    border: 5px;
+    border-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('imgs/Taurusnewbg.gif')   center/cover; 
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: white;
+}
+
+.top-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.dates {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.bottom-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.traits-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.traits {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text-with-link {
+    color: rgb(255, 0, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .dates {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .traits-title {
+        font-size: 2rem;
+    }
+
+    .traits {
+        font-size: 1rem;
+    }
+}
+
+/* NAV BAR IN FOOTER*/
+
+.snake-footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px; 
+    height: 60px;
+}
+
+.footer-link {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white; 
+    font-family: 'Didot', serif; 
+    font-size: 18px; 
+}
+
+.footer-link img {
+    width: 250px; 
+    height: auto; 
+    object-fit: contain; 
+    margin: 0 185px;
+}
+
+.footer-link:hover span {
+    color: #8a0000; 
+}

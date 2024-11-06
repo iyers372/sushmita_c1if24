@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Didot', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    background:url(imgs/leobgnew.gif);
+    background-size: cover; 
+}
+
+h1, h2, h3 {
+    font-family: 'Impact', sans-serif;
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Didot', serif;
+    line-height: 1.5;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+
+.text-area {
+    width: 50%; 
+    padding: 20px;
+    position: relative;
+}
+
+.text-area .nice-text {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease; 
+}
+
+.text-area .scary-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 20px;
+    color: rgb(255, 0, 0);
+    visibility: hidden;
+    transition: opacity 0.5s ease; 
+}
+
+
+.container:hover .nice-text {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container:hover .scary-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.image-area {
+    width: 50%; 
+    position: relative; 
+}
+
+
+.image-area img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    transition: opacity 0.5s ease; 
+}
+
+
+.scary-version {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.image-area:hover .scary-version {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-area:hover .nice-version {
+    opacity: 0;
+    visibility: hidden;
+}

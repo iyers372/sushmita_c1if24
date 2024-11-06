@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family: 'LamoricRowen';
+    src: url('font/LamoricRowen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Great Vibes', cursive;
+}
+
+a{
+    color: rgb(139, 191, 236);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('imgs/Virgobg.gif') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+
+.title {
+    font-family: 'LamoricRowen', serif;
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.dates {
+    font-family: 'LamoricRowen', serif;
+    font-size: 1.5em;
+    margin: 0;
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+}
+
+
+.description {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8em;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .dates {
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+}
