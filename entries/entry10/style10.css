@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Lamoric Rowen";
+    src: url("font/LamoricRowen.ttf") format("truetype");
+  }
+
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden; 
+  }
+  
+  #nextButton {
+    position: absolute;
+    bottom: 20px;  
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;  
+  }
+
+  .background {
+    background: url("imgs/E10bg1.gif") no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+
+  .pisces-title {
+    writing-mode: vertical-rl;
+    color: white;
+    font-family: "Lamoric Rowen", serif; 
+    font-size: 10rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-top: 500px;
+    margin-left: 0px;
+    left: 2.5%;
+    margin-right: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hint {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 100px;  /* Space between circle and hint */
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Lamoric Rowen', serif;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Show the hint when the circle is hovered */
+  .circle-container:hover .hint {
+    display: block;
+  }
+ 
+  .circle {
+    z-index: 1;
+    width: 75vmin;
+    height: 75vmin;
+    background: black;
+    margin-top: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+  
+
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+ 
+  .hover-button {
+    display: none;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hover-button img {
+    width: 100%;
+    height: auto;
+  }
+  .circle::before {
+    z-index: 1; 
+  }
+
+
+  .circle:hover {
+    transform: scale(1.05); 
+  }
+  
+  .circle:hover .hover-button {
+    display: block;
+  }
+  

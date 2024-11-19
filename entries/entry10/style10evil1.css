@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 10px;
+    padding: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    background: url('imgs/E10E1.jpg') ;
+    animation: background-breathing 5s infinite ease-in-out; ;
+    background-size: cover;
+    color: rgb(0, 0, 0); 
+    font-size: 1.5rem;
+}
+@keyframes background-breathing {
+    0%, 100% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(1.05); 
+    }
+  }
+
+a{
+    color: rgb(255, 0, 0);
+}
